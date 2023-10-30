@@ -1,7 +1,8 @@
 import getListStudents from './0-get_list_students.js';
 
 export default function getStudentIdsSum(getListStudents, city) {
-  getListStudents.map((record) => {
+  const result = getListStudents.filter((record) => {
     return record.city === city;
-  })
+  });
+  return result;
 }
